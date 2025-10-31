@@ -1,0 +1,283 @@
+// Featured and trusted
+
+
+.web_about--wrapper {
+    .about-section__brands {
+        position: relative;
+
+        .swiper {
+            width: 100%;
+            padding: 0 40px;
+
+            .swiper-wrapper {
+                display: flex;
+                align-items: center;
+            }
+
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: transform 0.3s ease;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                .web_cardImage {
+                    width: 240px;
+                    height: 140px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all 0.3s ease;
+                    padding: 20px 20px;
+
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+                        object-fit: contain;
+                        transition: filter 0.3s ease;
+                    }
+
+                    &:hover {
+                        background-color: #fff;
+                        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+                        img {
+                            filter: grayscale(0%);
+                        }
+                    }
+                }
+            }
+        }
+
+        // Swiper navigation buttons
+        .icc_navIcons {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+            pointer-events: none;
+
+            .swiper-button {
+                pointer-events: all;
+                width: 40px;
+                height: 40px;
+                background: rgba(255, 255, 255, 0.9);
+                border-radius: 50%;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background: $primary-color;
+                    color: $white;
+                }
+
+                &.swiper-button-prev::after,
+                &.swiper-button-next::after {
+                    font-size: 16px;
+                    color: $dark-text-color;
+                }
+            }
+        }
+    }
+}
+
+// Deliver more value
+
+
+.web_value--wrapped {
+
+    background-image: url('../images/section-bg.png');
+    background-position: center;
+    padding: 200px 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeUp 0.8s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+    .audit_valueList {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        li {
+            border-bottom: 1px solid $white;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-bottom: 30px;
+
+            &:last-child {
+                border-bottom: 0;
+                padding-bottom: 0;
+            }
+
+            h5 {
+                @include text($white, 23px, 100%, 700);
+                position: relative;
+                display: flex;
+                gap: 15px;
+                align-items: center;
+
+                &::before {
+                    content: '';
+                    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.0003 0C5.37254 0 0 5.37254 0 12.0003C0 18.6281 5.37254 24 12.0003 24C18.6281 24 24 18.6275 24 12.0003C24 5.37318 18.6275 0 12.0003 0ZM17.9893 8.91999C17.9344 8.99721 17.8623 9.0623 17.7947 9.1293C15.4929 11.4317 13.1834 13.7271 10.8951 16.0423C10.4605 16.4814 9.91039 16.4935 9.47007 16.0372C8.35396 14.8803 7.20083 13.759 6.06748 12.6187C5.62844 12.1771 5.74905 11.493 6.30168 11.2856C6.64501 11.1567 6.95387 11.2339 7.21806 11.4994C8.14401 12.4304 9.07442 13.3577 10.0036 14.2862C10.0584 14.3417 10.1172 14.394 10.2358 14.5076C10.2875 14.424 10.3207 14.3366 10.3813 14.2759C12.484 12.1688 14.5905 10.0648 16.6939 7.95767C16.8809 7.77069 17.0787 7.64115 17.3607 7.64689C17.6824 7.65391 17.9108 7.79367 18.057 8.06615C18.2152 8.36034 18.1808 8.65069 17.9893 8.91999Z' fill='white'/%3E%3C/svg%3E%0A");
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                }
+            }
+
+            p {
+                @include text($white, 20px, 30px, 400);
+            }
+        }
+    }
+}
+
+
+// placeholder css here 
+
+.web_placeholder--wrapper {
+    .web_placeholderBlock {
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 125px;
+                min-width: 125px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+                img {
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.4s ease, box-shadow 0.4s ease;
+                }
+
+                &:hover {
+                    transform: translateY(-6px) scale(1.05);
+
+                    img {
+                        transform: scale(1.08);
+                        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// cta css here 
+
+.web_cta--wrapper {
+    background: #F1F1F1;
+    padding: 0;
+}
+
+// responsive here 
+
+
+@media only screen and (max-width: 1600px) {
+    .web_value--wrapped {
+        .audit_valueList {
+            gap: 20px;
+
+            li {
+                gap: 15px;
+                padding-bottom: 20px;
+
+                h5 {
+                    font-size: 20px;
+
+                    &::before {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .web_about--wrapper {
+        padding-top: 0;
+    }
+
+    .web_value--wrapped {
+        background: #0C1F48;
+        padding: 50px 0;
+    }
+
+    .web_casestudy--wrapper {
+        &::after {
+            content: unset !important;
+        }
+    }
+
+    .web_cta--wrapper {
+        padding: 50px 0 0;
+    }
+
+    .web_titleBlock.left-side-about {
+        text-align: center;
+    }
+
+    .cta-imageBlock {
+        margin-top: 20px;
+    }
+
+    .web_casestudy--wrapper ul {
+        margin-top: 20px !important;
+    }
+
+    .web_testimonials--wrapper .col-lg-4 {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .web_value--wrapped .audit_valueList {
+        margin-top: 20px;
+    }
+
+    .web_value--wrapped .audit_valueList li p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+
+}

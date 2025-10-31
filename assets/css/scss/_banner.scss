@@ -1,0 +1,190 @@
+// home banner css start 
+
+.web_bannerBlock--wrapper {
+    background-image: url('../images/banner-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 130px 0;
+
+    .web_bannerContent {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        h1 {
+            @include text($white, 46px, 62px, 700);
+        }
+
+        p {
+            @include text($white, 18px, 30px, 400);
+        }
+
+        .normal-link {
+            @include text($white, 18px, 100%, 700);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-transform: capitalize;
+
+            .white-arrow {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        .webBanner-input {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .input-block {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                position: relative;
+
+                .form-control {
+                    width: 100%;
+                    border-radius: 10px;
+                    background-color: $white;
+                    min-height: 60px;
+                    color: $dark-text-color;
+                    font-size: 16px;
+                    font-weight: 400;
+                    padding-right: 140px;
+                    border: none;
+                    outline: none;
+                }
+
+                .btn {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    padding: 0 25px;
+                    font-weight: 600;
+                    font-size: 15px;
+                }
+            }
+
+            .normal-link {
+                color: $white;
+                font-size: 18px;
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                white-space: nowrap;
+
+                .white-arrow {
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}
+
+
+// Responsive Css Here 
+
+@media only screen and (max-width: 1366px) {
+    .web_bannerBlock--wrapper {
+        padding: 60px 0 100px;
+
+        .web-bannerImage {
+            text-align: center;
+        }
+
+        .web_bannerContent {
+            gap: 10px;
+            justify-content: center;
+            text-align: center;
+
+            .webBanner-input {
+
+                gap: 15px;
+                flex-wrap: wrap;
+                text-align: center;
+                justify-content: center;
+            }
+
+            h1 {
+                font-size: 38px;
+                line-height: 48px;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .web_buttonBlock {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .web_bannerBlock--wrapper {
+        .web_bannerContent {
+            .web_tagline {
+                font-size: 12px;
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 34px;
+                line-height: 44px;
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+    }
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .web_bannerBlock--wrapper {
+        .web_imageBlock {
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .web_bannerBlock--wrapper {
+        &.common_banner {
+            .web_bannerContent {
+                .breadcrumb {
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .web_bannerContent {
+            text-align: center;
+
+            .web_buttonBlock {
+                justify-content: center;
+                margin-top: 20px;
+            }
+        }
+
+        .web_imageBlock {
+            margin-top: 25px;
+        }
+    }
+}
