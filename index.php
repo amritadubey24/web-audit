@@ -119,14 +119,261 @@ $valueSection = '
 ';
 // About Section
 $reportSection = '
-<section class="web_report--wrappe">
+<section class="web_report--wrapper">
   <div class="container">
-    <div class="web_titleBlock">
-      <h2 class="web_title">Our audit reports have helped agencies close millions of dollars</h2>
-      <p>Use our professionally written and designed audit reports to help your agency close more deals.</p>
+    <div class="web_titleBlock text-center">
+      <h2 class="web_title">
+        Our audit reports have helped agencies close millions of dollars
+      </h2>
+      <p>
+        Use our professionally written and designed audit reports to help your agency close more deals.
+      </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- Nav Pills -->
+      <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-web-audit-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-web-audit" type="button" role="tab" aria-controls="pills-web-audit"
+            aria-selected="true">
+            <span class="tab-icon web-audit"></span> Website Audit
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-audit-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-profile-audit" type="button" role="tab" aria-controls="pills-profile-audit"
+            aria-selected="false">
+            <span class="tab-icon profile-audit"></span> Google Business Profile Audit
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-seo-audit-tab" data-bs-toggle="pill" data-bs-target="#pills-seo-audit"
+            type="button" role="tab" aria-controls="pills-seo-audit" aria-selected="false">
+            <span class="tab-icon seo-audit"></span> On Page SEO Audit
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-digi-audit-tab" data-bs-toggle="pill" data-bs-target="#pills-digi-audit"
+            type="button" role="tab" aria-controls="pills-digi-audit" aria-selected="false">
+            <span class="tab-icon digi-audit"></span> Digital Competitive Analysis Audit
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-ecom-audit-tab" data-bs-toggle="pill" data-bs-target="#pills-ecom-audit"
+            type="button" role="tab" aria-controls="pills-ecom-audit" aria-selected="false">
+            <span class="tab-icon e-com-audit"></span> E-commerce Website Audit
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-templates-tab" data-bs-toggle="pill" data-bs-target="#pills-templates"
+            type="button" role="tab" aria-controls="pills-templates" aria-selected="false">
+            <span class="tab-icon templates"></span> +6 Other Templates
+          </button>
+        </li>
+      </ul>
+
+      <!-- Tab Content -->
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-web-audit" role="tabpanel"
+          aria-labelledby="pills-web-audit-tab">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="web_titleBlock left-side-about">
+                <h2 class="web_title">Website Audit</h2>
+                <p class="web_subTitle">
+                  Audit and optimize your agency client\'s Google Business Profile to boost their local rankings.
+                </p>
+                <p class="web_subTitle">
+                  This Google Business Profile audit report generates an actionable checklist of optimization strategies
+                  to improve visibility and increase both online and in-store traffic.
+                </p>
+                <p class="web_subTitle">
+                  Stand out by delivering value, building trust, and generating more revenue for your agency.
+                </p>
+                <p class="web_subTitle">
+                  Easily brand and personalize this report for your agency for free.
+                </p>
+                <div class="view-all-btn mt-3">
+                  <a href="javascript:void(0);" class="btn btn-primary">VIEW REPORT</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="cta-imageBlock text-center">
+                <img src="assets/images/audit-report.png" alt="Audit Report" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade show active" id="pills-profile-audit" role="tabpanel" aria-labelledby="pills-profile-audit-tab">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="web_titleBlock left-side-about">
+                <h2 class="web_title">Google Business Profile Audit Report</h2>
+                <p class="web_subTitle">
+                  Audit and optimize your agency client\'s Google Business Profile to boost their local rankings.
+                </p>
+                <p class="web_subTitle">
+                  This Google Business Profile audit report generates an actionable checklist of optimization strategies
+                  to improve visibility and increase both online and in-store traffic.
+                </p>
+                <p class="web_subTitle">
+                  Stand out by delivering value, building trust, and generating more revenue for your agency.
+                </p>
+                <p class="web_subTitle">
+                  Easily brand and personalize this report for your agency for free.
+                </p>
+                <div class="view-all-btn mt-3">
+                  <a href="javascript:void(0);" class="btn btn-primary">VIEW REPORT</a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-lg-6">
+              <div class="cta-imageBlock text-center">
+                <img src="assets/images/audit-report.png" alt="Audit Report" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade show active" id="pills-seo-audit" role="tabpanel" aria-labelledby="pills-seo-audit-tab">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="web_titleBlock left-side-about">
+                <h2 class="web_title"> On Page SEO Audit</h2>
+                <p class="web_subTitle">
+                  Audit and optimize your agency client\'s Google Business Profile to boost their local rankings.
+                </p>
+                <p class="web_subTitle">
+                  This Google Business Profile audit report generates an actionable checklist of optimization strategies
+                  to improve visibility and increase both online and in-store traffic.
+                </p>
+                <p class="web_subTitle">
+                  Stand out by delivering value, building trust, and generating more revenue for your agency.
+                </p>
+                <p class="web_subTitle">
+                  Easily brand and personalize this report for your agency for free.
+                </p>
+                <div class="view-all-btn mt-3">
+                  <a href="javascript:void(0);" class="btn btn-primary">VIEW REPORT</a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-lg-6">
+              <div class="cta-imageBlock text-center">
+                <img src="assets/images/audit-report.png" alt="Audit Report" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade show active" id="pills-digi-audit" role="tabpanel" aria-labelledby="pills-digi-audit-tab">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="web_titleBlock left-side-about">
+                <h2 class="web_title">Digital Competitive Analysis Audit</h2>
+                <p class="web_subTitle">
+                  Audit and optimize your agency client\'s Google Business Profile to boost their local rankings.
+                </p>
+                <p class="web_subTitle">
+                  This Google Business Profile audit report generates an actionable checklist of optimization strategies
+                  to improve visibility and increase both online and in-store traffic.
+                </p>
+                <p class="web_subTitle">
+                  Stand out by delivering value, building trust, and generating more revenue for your agency.
+                </p>
+                <p class="web_subTitle">
+                  Easily brand and personalize this report for your agency for free.
+                </p>
+                <div class="view-all-btn mt-3">
+                  <a href="javascript:void(0);" class="btn btn-primary">VIEW REPORT</a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-lg-6">
+              <div class="cta-imageBlock text-center">
+                <img src="assets/images/audit-report.png" alt="Audit Report" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade show active" id="pills-ecom-audit" role="tabpanel" aria-labelledby="pills-ecom-audit-tab">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="web_titleBlock left-side-about">
+                <h2 class="web_title">E-commerce Website Audit</h2>
+                <p class="web_subTitle">
+                  Audit and optimize your agency client\'s Google Business Profile to boost their local rankings.
+                </p>
+                <p class="web_subTitle">
+                  This Google Business Profile audit report generates an actionable checklist of optimization strategies
+                  to improve visibility and increase both online and in-store traffic.
+                </p>
+                <p class="web_subTitle">
+                  Stand out by delivering value, building trust, and generating more revenue for your agency.
+                </p>
+                <p class="web_subTitle">
+                  Easily brand and personalize this report for your agency for free.
+                </p>
+                <div class="view-all-btn mt-3">
+                  <a href="javascript:void(0);" class="btn btn-primary">VIEW REPORT</a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-lg-6">
+              <div class="cta-imageBlock text-center">
+                <img src="assets/images/audit-report.png" alt="Audit Report" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade show active" id="pills-templates" role="tabpanel" aria-labelledby="pills-templates-tab">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="web_titleBlock left-side-about">
+                <h2 class="web_title">+6 Other Templates</h2>
+                <p class="web_subTitle">
+                  Audit and optimize your agency client\'s Google Business Profile to boost their local rankings.
+                </p>
+                <p class="web_subTitle">
+                  This Google Business Profile audit report generates an actionable checklist of optimization strategies
+                  to improve visibility and increase both online and in-store traffic.
+                </p>
+                <p class="web_subTitle">
+                  Stand out by delivering value, building trust, and generating more revenue for your agency.
+                </p>
+                <p class="web_subTitle">
+                  Easily brand and personalize this report for your agency for free.
+                </p>
+                <div class="view-all-btn mt-3">
+                  <a href="javascript:void(0);" class="btn btn-primary">VIEW REPORT</a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-lg-6">
+              <div class="cta-imageBlock text-center">
+                <img src="assets/images/audit-report.png" alt="Audit Report" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
 ';
 
 

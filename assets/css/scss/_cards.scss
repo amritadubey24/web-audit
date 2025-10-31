@@ -297,6 +297,78 @@
     }
 }
 
+// nav pills
+.nav.nav-pills {
+    width: 100%;
+    background: #F2F7FE;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+    li {
+        &.nav-item {
+            width: calc(100% / 6);
+        }
+
+        .nav-link {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include text(#3d3e40, 16px, 28px, 500);
+            text-align: center;
+            white-space: normal;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            text-align: center;
+            line-height: 1.4;
+            min-width: 225px;
+            min-height: 205px;
+            gap: 20px;
+
+            &.active {
+                background-color: $white;
+                border-top: 5px solid $secondary-color;
+                border-radius: 10px 10px 0 0px;
+                color: $secondary-color;
+
+                .web-audit {
+                    @include web-audit
+                }
+
+                .seo-audit {
+                    @include seo-audit
+                }
+
+                .profile-audit {
+                    @include profile-audit
+                }
+
+                .digi-audit {
+                    @include digi-audit
+                }
+
+                .e-com-audit {
+                    @include e-com-audit
+                }
+
+                .templates {
+                    @include templates
+                }
+            }
+        }
+
+        .tab-icon {
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    }
+}
+
 // responsive here 
 
 @media only screen and (max-width: 1600px) {
@@ -349,6 +421,19 @@
 
             .testimonial-link {
                 font-size: 16px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .nav.nav-pills {
+        overflow-x: scroll;
+
+        li {
+
+            .nav-link {
+                min-width: auto;
             }
         }
     }
